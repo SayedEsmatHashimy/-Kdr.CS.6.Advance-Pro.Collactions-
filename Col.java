@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LinkedList;
+package Stack;
 
 /**
  *
@@ -12,12 +12,13 @@ package LinkedList;
 import java.util.*;
 public class Col {
     public static void main(String args[]){  
-        LinkedList<String> al=new LinkedList<>();  
-        al.add("Balkh");  
-        al.add("Kabul");  
-        al.add("Kandaher");  
-        al.add("Herat");  
-        Iterator<String> itr=al.iterator();  
+        Stack<String> stack = new Stack<>();  
+        stack.push("Balkh");  
+        stack.push("Kabul");  
+        stack.push("Kandaher");  
+        stack.push("Herat");   
+        stack.pop();  
+        Iterator<String> itr=stack.iterator();  
         while(itr.hasNext()){  
         System.out.println(itr.next());  
 }  
