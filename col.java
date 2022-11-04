@@ -3,27 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Hashset;
+package Treeset;
 
 /**
  *
  * @author himmat
  */
-import java.util.*; 
+import java.util.*;
 public class col {
-   
-public static void main(String args[]){  
-//Creating HashSet and adding elements  
-HashSet<String> set=new HashSet<>();  
-set.add("Balkh");  
-set.add("Kabul");  
-set.add("Kandaher");  
-set.add("Herat");  
-//Traversing elements  
-Iterator<String> itr=set.iterator();  
-while(itr.hasNext()){  
-System.out.println(itr.next());  
+    public static void main(String args[]){  
+        //Creating and adding elements  
+        TreeSet<String> set=new TreeSet<>();  
+        set.add("Balkh");  
+        set.add("Kabul");  
+        set.add("Kandaher");  
+        set.add("Herat");  
+        //traversing elements  
+        Iterator<String> itr=set.iterator();  
+        while(itr.hasNext()){  
+        System.out.println(itr.next());  
 }  
-}  
- 
+} 
 }
